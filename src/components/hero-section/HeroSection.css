@@ -1,0 +1,355 @@
+.hero-container{
+    padding: 2rem;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h {    
+    display: flex;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.right-h {
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+.the-best-ad {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.the-best-ad> span {
+    z-index: 2;
+}
+
+.the-best-ad>div {
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.hero-text>div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.figures {
+    display: flex;
+    gap: 2rem;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1) {
+    color: white;
+    font-size: 2rem;
+}
+
+.figures>div>span:nth-of-type(2) {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+
+
+.right-h>.btn {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+
+.heart-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 1rem;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+}
+
+.heart-rate>img {
+    width: 2rem;
+}
+
+.heart-rate>:nth-child(2) {
+    color: var(--gray);
+}
+
+.heart-rate>:nth-child(3) {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-image {
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+
+.hero-image-back {
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.calories {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+
+.calories > img {
+    width: 3rem;
+}
+
+.calories > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories > div > :nth-child(1) {
+    color: var(--gray);
+}
+
+.calories > div > :nth-child(2) {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+ .firstPlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    position: relative;
+}
+.firstPlan .darkImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #616163;
+    z-index: 11;
+    opacity: .2;
+}
+.firstPlan img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.firstPlan h3{
+    padding-top: 50px;
+    z-index: 12;
+}
+.firstPlan h1{
+    text-transform: uppercase;
+    z-index: 12;
+    margin-bottom: 20px;
+}
+.firstPlan h2{
+    text-transform: uppercase;
+    z-index: 12;
+    line-height: 10px;
+    margin-bottom: 0px;
+}
+
+.firstPlan .firstPlanSteps{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 12;
+}
+.firstPlan .firstPlanSteps >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstPlan .firstPlanSteps >div p{
+    padding: 0px 5px;
+    line-height: 35px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 18px;
+     letter-spacing: 1px;
+}
+.firstPlan .planBtn{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 14px 25px;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 12;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+}
+.firstPlan .planBtn:hover{
+    background-color: transparent;
+    outline: 1px solid #fff;
+    color: #fff;
+}
+
+
+
+.topButton{
+  position: fixed;
+  display: block;
+  right: 5px;
+  width: 40px;
+  height: 30px;
+  border-radius: 10px;
+  z-index: 1000;
+  bottom: 30px;
+  background-color: var(--orange);
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-blur {
+        width: 14rem;
+    }
+    .the-best-ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text > div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .figures > div > span:nth-of-type(1) {
+        font-size: large;
+    }
+    .figures > div > span:nth-of-type(2) {
+        font-size: small;
+    }
+    .right-h {
+        position: relative;
+        background: none;
+    }
+    .heart-rate {
+        left: 1rem;
+        top: 2rem;
+    }
+    .calories {
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+    .calories > img {
+        width: 2rem;
+    }
+    .calories > div > :nth-child(2) {
+        color: white;
+        font-size: 1rem;
+    }
+    .hero-image {
+        position: relative;
+        width: 15rem;
+        left: 7rem;
+        top: 4rem;
+        align-self: center;
+    }
+    .hero-image-back {
+        width: 15rem;
+        left: 2rem;
+        top: 0rem;
+    }
+
+    .firstPlan .firstPlanSteps{
+        flex-direction: column;
+       
+    }
+   
+}

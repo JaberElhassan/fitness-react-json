@@ -1,0 +1,140 @@
+.plans-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f5f5;
+}
+.plans-container >div{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+.plans-container .details {
+    width: 40%;
+}
+.details p{
+    line-height: 30px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fitnessAndWellnessImage, .womenHealth .womenHealthImage, .workWithUs .workWithUsImage{
+    width: 50%;
+}
+.fitnessAndWellnessImage img, .womenHealth .womenHealthImage img, .workWithUs .workWithUsImage img{
+    width: 100%;
+    object-fit: cover;
+}
+.plans-container .womenHealth .womenHealthImage{
+    order: 1;
+}
+.plans-container .womenHealth .details{
+    order: 2;
+}
+
+.plans-container .workWithUs .contactBtn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; 
+    border: none;
+    outline: 1px solid black;
+}
+.plans-container .membership{
+    display: flex;
+    gap: 2rem;
+   
+}
+.plans-container .membership .card{
+    border: 1px solid rgb(169, 163, 163);
+     align-items: center;
+    justify-content: center;
+    width: 33%;
+    background-color:rgb(240, 234, 234)
+}
+
+.plans-container .membership .card .address, .phone{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.plans-container .membership .card:nth-child(1) .address img, .phone img{
+    width: 30px;
+}
+.plans-container .membership .card:nth-child(1) .phone{
+    display: flex;
+}
+
+.plans-container .membership .card >h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    margin: 0px;
+    padding: 10px;
+   color: #e5e6e7;
+   font-size: 1.85rem;
+   letter-spacing: 1px;
+   background-color: #080f28;
+}
+
+.plans-container .membership .card .membershipDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(240, 234, 234);
+    color: #1c1b1b;
+}
+.plans-container .membership .card .membershipDetails h1{
+    line-height: 10px;
+    
+}
+.plans-container .membership .card .membershipDetails span{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+     font-size: 1.3rem;
+     font-family: 'Times New Roman', Times, serif;
+     
+}
+.plans-container .membership .membershipDetails span h1{
+    margin-right: 5px;
+}
+.plans-container .membership .card .horizontalRow{
+    height: 1px;
+    background-color: rgb(139, 133, 133);
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .plans-container >div{
+        display: flex;
+        flex-direction: column;       
+    }
+    .plans-container .details{
+        width: 100%;
+    }
+    .fitnessAndWellnessImage, .womenHealth .womenHealthImage, .workWithUs .workWithUsImage{
+    width: 100%;
+    }
+
+    .plans-container .womenHealth .womenHealthImage{
+    order: 2;
+    }
+    .plans-container .womenHealth .details{
+    order: 1;
+    }
+    .plans-container .membership{
+        flex-direction: column;
+    }
+    .plans-container .membership .card{
+        width: 100%;
+    }
+}
+

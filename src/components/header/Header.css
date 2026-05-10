@@ -1,0 +1,144 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.header .logoImage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logoImage img {
+    width: 150px;
+    object-fit: fill;
+}
+
+.header .title {
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid rgb(223, 222, 221);
+    border-radius: 10px 5px 40px 3px;
+    padding: 4px 60px;
+    box-shadow: 6px 4px 5px #fff;
+}
+
+.header .menuBars {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 4px;
+    background-color: rgb(116, 109, 109);
+    display: none;
+    cursor: pointer;
+}
+
+.header .menuBars img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+.header-menu .headerLink {
+    padding: 10px;
+}
+
+.header-menu>li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.header .closebar {
+    text-align: center;
+    display: none;
+}
+
+.header .closebar span {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--appColor);
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    .header .menuBars {
+        display: block;
+    }
+
+    .header .title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .header .logoImage img {
+        width: 120px;
+    }
+
+    .header .header-menu {
+        background-color: rgb(83, 76, 76);
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        top: 100px;
+        width: 50%;
+        right: -100%;
+        padding-top: 20px;
+        z-index: 100;
+        gap: 5px;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .header .header-menu.active {
+        display: flex;
+        right: 0px;
+    }
+
+    .header .header-menu .headerLink {
+        border-bottom: 1px solid var(--orange);
+        width: 50%;
+    }
+
+    .header .header-menu li:first-child, .header .header-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .header .closebar {
+        display: block;
+    }
+}

@@ -1,0 +1,91 @@
+
+.sortedExerciseZero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 2px solid rgb(204, 126, 10);
+    padding: 2rem;
+    width: 100%;
+    background-color: red;
+}
+.sortedExerciseZero .noExerciseFound {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: rgb(13, 117, 220);
+    border: 1px solid rgb(49, 214, 13);
+    width: 100%;
+    height: 40px;
+    margin: 40px;
+   
+}
+ .cardContainer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) ;
+    padding: 0rem 1rem 1rem;
+    column-gap: 1.5rem;
+    row-gap: 1.2rem;
+    background-color: #f9f5f5 ;
+}
+
+.cardContainer .card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 2px 2px 5px black;
+    animation: slideLeft 1s ease-out;
+    
+}
+
+.cardContainer .card .cardImage{
+    padding: 4px;
+    min-width: 50%;
+    vertical-align: middle;
+}
+.cardContainer .card .cardImage img{
+    display: block;
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}
+    
+.cardContainer .card .details{
+   padding: 16px 0px;
+    min-width: 50%;
+}
+.cardContainer .card .details .exerciseName{
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: rgb(55 48 163);   
+}
+.cardContainer .card .details .detailsInfo{
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 35vh;
+    border-color: rgb(16, 15, 15);
+    border-width:  2px;
+    background-color: #f9f5f5;
+    line-height: 25px;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    padding: 10px;
+    
+}
+
+@media screen and (max-width: 768px){
+   .cardContainer{
+    grid-template-columns: 1fr;
+    } 
+
+    .cardContainer .card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+    
