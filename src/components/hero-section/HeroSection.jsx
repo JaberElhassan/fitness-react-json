@@ -137,9 +137,11 @@ const HeroSection = () => {
 
                 </div>
 
-                <button className="planBtn" onClick={scrollToContactSection}>
-                    get started now
-                </button>
+                <Link to='contact'>
+                    <button className="planBtn" onClick={scrollToContactSection}>
+                        get started now
+                    </button>
+                </Link>
 
             </div>
 
