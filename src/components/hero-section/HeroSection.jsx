@@ -17,7 +17,7 @@ const HeroSection = () => {
     const mobile = window.innerWidth <= 768 ? true : false;
 
     const scrollToContactSection= () => {
-    const element = document.getElementById("home");
+    const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
