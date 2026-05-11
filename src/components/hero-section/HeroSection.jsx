@@ -17,7 +17,7 @@ const HeroSection = () => {
     const mobile = window.innerWidth <= 768 ? true : false;
 
     const scrollToContactSection= () => {
-    const element = document.getElementById('contact');
+    const element = document.getElementById("home");
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -137,11 +137,9 @@ const HeroSection = () => {
 
                 </div>
 
-                <Link to='contact'>
-                    <button className="planBtn" onClick={scrollToContactSection}>
-                        get started now
-                    </button>
-                </Link>
+                <button className="planBtn" onClick={scrollToContactSection}>
+                    get started now
+                </button>
 
             </div>
 
