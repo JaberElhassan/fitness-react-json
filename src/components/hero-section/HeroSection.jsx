@@ -69,7 +69,9 @@ const HeroSection = () => {
 
                 <div className="right-h">
 
-                    <button className="btn"><Link to='contactgit'>Join Now</Link></button>
+                    <button className="btn" onClick={scrollToContactSection}>
+                        Join Now
+                    </button>
                     <motion.div
                         initial={{ right: "-1rem" }}
                         whileInView={{ right: "4rem" }}
