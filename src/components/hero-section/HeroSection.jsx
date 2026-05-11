@@ -16,6 +16,13 @@ const HeroSection = () => {
     const transition = { type: 'spring', duration: 3 }
     const mobile = window.innerWidth <= 768 ? true : false;
 
+    const scrollToContactSection= () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
     return (
         <div className="hero-container" id="home">
             <div className="hero">
@@ -62,7 +69,7 @@ const HeroSection = () => {
 
                 <div className="right-h">
 
-                    <button className="btn"><Link to='contact'>Join Now</Link></button>
+                    <button className="btn"><Link to='contactgit'>Join Now</Link></button>
                     <motion.div
                         initial={{ right: "-1rem" }}
                         whileInView={{ right: "4rem" }}
@@ -128,7 +135,9 @@ const HeroSection = () => {
 
                 </div>
 
-                <button className="planBtn">get started now</button>
+                <button className="planBtn" onClick={scrollToContactSection}>
+                    get started now
+                </button>
 
             </div>
 
