@@ -9,7 +9,6 @@ import Testimonials from './components/testimonials/Testimonials';
 import Guide from './components/guide/Guide';
 
 
-
 function App() {
   return (
     <div className="App">

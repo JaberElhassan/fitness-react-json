@@ -10,19 +10,7 @@
 }
 
 
-.fitnessAndWellness{
-    animation: slide-up 1s;
-}
-@keyframes slide-up {
-    from {
-        opacity: 0;
-         transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 .plans-container .fitnessAndWellness .details{
     width: 40%;
     
@@ -31,34 +19,13 @@
     line-height: 30px;
     font-size: 17px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    animation: line-up 1s;
 }
-@keyframes line-up {
-    from {
-        line-height: 200px;
-    }
-    to {
-        line-height: 30px;
-    }
-}
+
 
 .womenHealth .details p {
     line-height: 30px;
     
 }
-.womenHealth .details{
-    animation: scroll-left 1s linear;
-}
-@keyframes scroll-left {
-    from {
-        transform: translateX(100%)
-    }
-    to {
-     transform: translateX(0);
-    }
-}
-
-
 
 .plans-container .details {
     width: 40%;
@@ -67,7 +34,6 @@
     line-height: 30px;
     font-size: 17px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    animation: line-up 1s;
 }
 .fitnessAndWellnessImage, .womenHealth .womenHealthImage, .workWithUs .workWithUsImage{
     width: 50%;
@@ -76,9 +42,7 @@
     width: 100%;
     object-fit: cover;
 }
-.workWithUsImage{
-     animation: slide-up 1s;
-}
+
 
 
 
