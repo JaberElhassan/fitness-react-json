@@ -122,10 +122,12 @@
         gap: 5px;
         overflow: hidden;
         transition: all 0.2s ease-in-out;
+        display: none;
+        animation: slideInLeft 0.3s ease-in-out;
     }
 
     .header .header-menu.active {
-        display: flex;
+        display: block;
         right: 0px;
     }
 
